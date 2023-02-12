@@ -10,5 +10,16 @@ module.exports ={
             callback(result.insertedId)
         })
 
+    },
+
+    getAllProducts:()=>{
+
+        return new Promise((resolve,reject)=>{
+            db.get().collection('products').find({}).toArray().then((products)=>{
+
+                resolve(products)
+            })
+        })
+        
     }
 }

@@ -14,6 +14,7 @@
       <th scope="col">Id</th>
       <th scope="col">Title</th>
       <th scope="col">Category</th>
+      <th scope="col">Price</th>
       <th scope="col">Description</th>
       <th>Image</th>
     </tr>
@@ -23,10 +24,11 @@
     <tr>
        
       <th scope="row">{{@index}}</th>
-      <td>{{this.title}}</td>
-      <td>{{this.category}}</td>
-      <td>{{this.description}}</td>
-      <td> <img style="width: 50px;height: 50px;" src="{{this.imgUrl}}" alt=""></td>
+      <td>{{this.Name}}</td>
+      <td>{{this.Category}}</td>
+       <td>{{this.Price}}</td>
+      <td>{{this.Description}}</td>
+      <td> <img style="width: 50px;height: 50px;" src="/product-images/{{this._id}}.jpg" alt=""></td>
     
     </tr>
       {{/each}}
